@@ -4,6 +4,7 @@ var questionNo
 var difficultyLevel
 var timerReq 
 var sortedQues = {}
+const hideNav = document.querySelector('nav')
 const timer = document.querySelectorAll('.timer');
 const difficulty = document.querySelectorAll('.difficulty')
 const main = document.querySelector('.main');
@@ -37,6 +38,8 @@ const inputValue = () => {
     else{
         main.classList.remove("hidden")
         // console.log(questionNo)
+        
+        hideNav.classList.add('hidden')
         sortQuestion(difficulty);
         scrollToNext('box')
         loadQues();
@@ -135,6 +138,7 @@ const endQuiz = () =>{
     document.querySelector('#box').innerHTML = `Your score = ${right} / ${questionNo} <br>
     Quiz will be reset after 10 seconds`
     setTimeout(() => {
+        main.classList.add('hidden')
         location.reload();
     }, 10000);
 }

@@ -8,16 +8,32 @@
 }
 .QA1_main{
     display: flex;justify-content: center;align-items: center; flex-direction: column; position: relative;
-    height: 100vh;
+    height: 100vh; padding-top: 50px;
 
+}
+
+#box{
+    position: relative;
+}
+
+.header{
+    display: flex; justify-content: space-between; align-items: center;
+    border: 2px solid yellow;
 }
 
 .heading{
-    margin: 20px 0;
     display: flex; justify-content: center; align-items: center;
 }
 
+.quiz-container {
+    position: absolute; right: 10px; top: 10px;
+    text-align: center;
+}
 
+.timer {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
 .input_main{
     margin: 0 auto;

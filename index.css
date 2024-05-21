@@ -151,8 +151,7 @@ video{
 }
 
 #box{
-    margin-top: 90px;
-    width: 80vh; height: 80vh;
+    width: 90vh; height: 90vh;
     background-color: var(--poppy);
     border-radius: 1rem;
     padding: 2rem;
@@ -160,6 +159,7 @@ video{
 
 .question{
     height: 50px;
+    margin-top: 30px;
 }
 
 .options{

@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../index.css">
+    <title>Quiz with Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../Css/about.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img class="logo_img" src="../images/logo-no-background.png" alt="">
+    <div class="quiz-container">
+        <div id="timer" class="timer">Time Remaining: 0:10</div>
+        <div id="quiz">
+            <!-- Quiz questions will go here -->
+            <p>Question 1: What is the capital of France?</p>
+            <input type="text" id="answer1">
+            <button onclick="submitQuiz()">Submit</button>
         </div>
-        <div class="links_main">
-            <a class="links" href="../index.html">Home</a>
-            <a class="links active" href="./Html/about.html">About</a>
-            <a class="links" href="./quiz.html">Quiz</a>
-            <a class="links" href="./practice.html">Practice</a>
-            <a class="links" href="./contact.html">Contact</a>
-        </div>
-    </nav>
-    This is about Page
+    </div>
+    <script src="../Scripts/about.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
