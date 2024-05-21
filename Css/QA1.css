@@ -1,0 +1,76 @@
+:root{
+    --poppy: #D64045;
+    --mint_green: #E9FFF9;
+    --non-photo-blue: #9ED8DB;
+    --ucla-blue: #467599;
+    --delft-blue: #1D3354;
+    --white: white;
+}
+.QA1_main{
+    display: flex;justify-content: center;align-items: center; flex-direction: column; position: relative;
+    height: 100vh;
+
+}
+
+.heading{
+    margin: 20px 0;
+    display: flex; justify-content: center; align-items: center;
+}
+
+
+
+.input_main{
+    margin: 0 auto;
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input{
+    display: flex; justify-content: center;align-items: center;
+    height: 60px;
+}
+
+#NoQ{
+    background-color: transparent;
+    outline: none; border: none; border-bottom: 2px solid #467599;
+    height: 32px;
+}
+
+.radio label {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    border: solid 2px #ccc;
+    transition: all 0.3s;
+    text-align: center;
+    border-radius: 20px;
+}
+  
+.radio input[type="radio"] {
+    display: none;  
+}
+  
+.diff_sec input[type="radio"]:checked + label {
+    border: solid 2px #D64045;
+}
+
+.timer_sec input[type="radio"]:checked + label {
+    border: solid 2px #D64045;
+}
+
+.btn{
+    margin-top: 40px;
+    height: 40px; width: 120px;
+    border: none; outline: none;
+    background-color: var(--ucla-blue);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.input_btn:hover{
+    background-color: var(--non-photo-blue);
+}

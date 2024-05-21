@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../Css/QA1.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img class="logo_img" src="../images/logo-no-background.png" alt="">
+        </div>
+        <div class="links_main">
+            <a class="links" href="../index.html">Home</a>
+            <a class="links" href="../Html/about.html">About</a>
+            <a class="links" href="../Html/quiz.html">Quiz</a>
+            <a class="links" href="../Html/practice.html">Practice</a>
+            <a class="links" href="../Html/contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="QA1_main">
+        <h1 class="heading">Welcome to Quantitative Apptitude 1</h1>
+
+        <div class="input_main">
+            <div class="input">
+                <label for="NoQ">Enter numbers of question you want to attempt : &nbsp;</label>
+                <input type="number" id="NoQ" autocomplete="off"> <br>
+            </div>
+
+            <div class="input">
+                <label for="difficulty">Difficulty level : &nbsp;</label>
+                <div class="diff_sec radio">
+                    <input type="radio" id="easy" class="difficulty" name="difficulty" value="easy">
+                    <label for="easy">Easy </label>
+
+                    <input type="radio" id="medium" class="difficulty" name="difficulty" value="medium">
+                    <label for="medium">Medium </label>
+
+                    <input type="radio" id="hard" class="difficulty" name="difficulty" value="hard">
+                    <label for="hard">Hard </label>
+                </div>
+            </div>
+
+            <div class="input">
+                <label>Do you wish to start timer? &nbsp;</label>
+                
+                <div class="timer_sec radio">
+                    <input type="radio" id="yes" name="timer" class="timer" value="yes">
+                    <label for="yes">Yes </label>
+
+                    <input type="radio" id="no" name="timer" class="timer" value="no">
+                    <label for="no">No </label>
+                </div>
+            </div>
+
+            <button class="input_btn btn">Start</button>
+        </div>
+    </div>
+
+    <div class="main hidden">
+        <div id="box">
+            <h3 class="question">Question</h3>
+            <div class="option_sec">
+                <input class="option" id="option1" type="radio" name="option" value="a">
+                <label for="option1">hello world</label>
+            </div>
+            <div class="option_sec">
+                <input class="option" id="option2" type="radio" name="option" value="b">
+                <label for="option2">hello world</label>
+            </div>
+            <div class="option_sec">
+                <input class="option" id="option3" type="radio" name="option" value="c">
+                <label for="option3">hello world</label>
+            </div>
+            <div class="option_sec">
+                <input class="option" id="option4" type="radio" name="option" value="d">
+                <label for="option4">hello world</label>
+            </div>
+    
+            <button class="submit_btn">Next</button>
+        </div>
+    </div>
+    <script type="module" src="../Scripts/QA1.js"></script>
+    <!-- <script src="../Scripts/script.js"></script> -->
+</body>
+</html>
